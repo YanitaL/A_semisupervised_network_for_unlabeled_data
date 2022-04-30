@@ -1,0 +1,28 @@
+{
+    "mode": "train",
+    "method":"Mixmatch", 
+    "name": "Mixmatch_250",
+    "dataset": "CIFAR10",
+    "datapath":"./data",
+    "depth":28,
+    "width":2,
+    "large":false, 
+    "num_classes":10,
+    "num_label":250,
+    "batch_size":64,
+    "epochs":20,
+    "save_epoch":10, 
+    "resume": false,
+    "ckpt": "latest.pth",
+    "verbose": true,
+
+    "lr":0.002,
+    "optim":"ADAM",
+    "lambda_u": 75,
+    "alpha":0.75,
+    "T" : 0.5,
+    "K" : 2,
+    "ema_alpha":0.999,
+    "weight_decay": 0.0004,
+    "seed":2114
+}
